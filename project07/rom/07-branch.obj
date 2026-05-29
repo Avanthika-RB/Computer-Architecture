@@ -1,0 +1,17 @@
+
+07-branch.o:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	00300513          	li	a0,3
+   4:	00700593          	li	a1,7
+   8:	00b54863          	blt	a0,a1,18 <foo>
+   c:	01e00513          	li	a0,30
+  10:	04600593          	li	a1,70
+  14:	c0001073          	unimp
+
+0000000000000018 <foo>:
+  18:	00150513          	addi	a0,a0,1
+  1c:	c0001073          	unimp
